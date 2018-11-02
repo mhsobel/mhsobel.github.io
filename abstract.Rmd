@@ -1,0 +1,29 @@
+---
+title: Association of rice intake and arsenic exposure with subclinical vascular disease among US adults
+output: 
+  html_document:
+      toc: true
+      toc_float: true
+---
+
+## Authors 
+Marisa Sobel (Columbia University), Tiffany Sanchez (Columbia University), Miranda Jones (Johns Hopkins), Joel Kaufman (University of Washington), Kevin Francesconi (Uni-Graz), Walter Gossler (Uni-Graz), Mary Gamble (Columbia University), Michael Blaha (Johns Hopkins), Dhananjay Vaidya (Johns Hopkins), Daichi Shimbo (Columbia University), Ana Navas-Acien (Columbia University)
+
+## Abstract  
+### Background  
+Arsenic is a preventable risk factor for coronary heart disease for populations with drinking water above the US EPA standard of 10 µg/L. Few studies have evaluated arsenic-related cardiovascular effects at levels lower than 10 µg/L. For these populations, food intake—specifically rice—represents the major source of arsenic. Whether As from rice represents a risk factor for cardiovascular disease (CVD) remains unknown. 
+
+### Objective   
+The main objective of this study is to investigate cross-sectional associations of rice intake (n= 6814), and urinary arsenic in a random subset (n=310), with markers of subclinical atherosclerosis in a multi-ethnic population recruited in 2000-2002 from 6 urban settings (New York, NY; Baltimore, MD; Chicago, IL; LA, CA; Twin Cities, MN; Winston Salem, NC). 
+
+### Design   
+Three domains of cardiovascular disease were included in the primary analysis: inflammation (high-sensitivity C-reactive protein [hsCRP], interleukin-6, and fibrinogen), vascular function (carotid distensibility by ultrasound, aortic distensibility by cardiac MRI, and brachial flow-mediated dilation), and subclinical atherosclerosis (carotid intima-media thickness, coronary artery calcification, and ankle-brachial index). Secondary analyses include arsenic-specific inflammatory markers (e-selectin, ICAM-1, and MMP-9), adjustment for nutritional status and PM2.5, and interactions by race, gender, age, smoking status, and site. Rice consumption was determined at baseline with a food frequency questionnaire. We included 5050 participants with most of the CVD outcomes of interest and no missing data. Subsets received a cardiac MRI (n=2759), an assessment of endothelial function (2702), and urinary arsenic measurements (246). 
+
+### Results  
+13% of participants reported consuming 1 servings of rice per day. Compared to individuals consuming <1 serving of rice per week in the primary analysis, there was no consistent association in high rice intake and subclinical markers of CVD after adjusting for demographic variables, healthy behavior, and other CVD risk factors. Some examples include hsCRP (geometric mean ratio (GMR) 0.96 [95%CI 0.85, 1.10]), CIMT (0.97 [0.92, 1.02]), and ABI (0.84 [0.52, 1.36]). Urinary arsenic, analyzed continuously due to the small sample size, similarly resulted in null associations (e.g. interleukin-6 (0.99 [0.88, 1.11]). Results for secondary analyses are ongoing.
+
+### Conclusion   
+Rice intake is not associated with subclinical vascular disease markers in a multi-ethnic urban US population. The subsample of urinary arsenic is too small to draw a firm conclusion. Whether As from rice represents a risk factor for cardiovascular disease (CVD), remains unknown. Further research, specifically with urinary arsenic as a biomarker of exposure, is needed to assess the potential CVD effects of low-level arsenic exposure in US populations. 
+
+### Translation   
+These findings can contribute to risk assessment of arsenic at low-moderate levels of exposure.

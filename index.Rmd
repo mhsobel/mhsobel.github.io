@@ -1,7 +1,18 @@
----
-title: "Holy cow!"
----
 
-### I have a webpage!
+<br>
 
-And I can put all kinds of stuff on it!
+
+
+<center>
+
+# Marisa Helen Sobel
+
+### Environmental Public Health Practitioner
+
+*combining the scientist on the left with the artist on the right*
+
+<br>
+
+<img src="images/self_photo.jpg" style="width:50%">
+
+</center>

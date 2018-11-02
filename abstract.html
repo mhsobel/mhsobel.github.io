@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Association of rice intake and arsenic exposure with subclinical vascular disease among US adults</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="about.html">About</a>
+</li>
+<li>
+  <a href="http://www.linkedin.com/in/marisasobel">LinkedIn</a>
+</li>
+<li>
+  <a href="art.html">Art</a>
+</li>
+<li>
+  <a href="mailto:&lt;ms5533@cumc.columbia.edu&gt;">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/mhsobel/">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Association of rice intake and arsenic exposure with subclinical vascular disease among US adults</h1>
+
+</div>
+
+
+<div id="authors" class="section level2">
+<h2>Authors</h2>
+<p>Marisa Sobel (Columbia University), Tiffany Sanchez (Columbia University), Miranda Jones (Johns Hopkins), Joel Kaufman (University of Washington), Kevin Francesconi (Uni-Graz), Walter Gossler (Uni-Graz), Mary Gamble (Columbia University), Michael Blaha (Johns Hopkins), Dhananjay Vaidya (Johns Hopkins), Daichi Shimbo (Columbia University), Ana Navas-Acien (Columbia University)</p>
+</div>
+<div id="abstract" class="section level2">
+<h2>Abstract</h2>
+<div id="background" class="section level3">
+<h3>Background</h3>
+<p>Arsenic is a preventable risk factor for coronary heart disease for populations with drinking water above the US EPA standard of 10 µg/L. Few studies have evaluated arsenic-related cardiovascular effects at levels lower than 10 µg/L. For these populations, food intake—specifically rice—represents the major source of arsenic. Whether As from rice represents a risk factor for cardiovascular disease (CVD) remains unknown.</p>
+</div>
+<div id="objective" class="section level3">
+<h3>Objective</h3>
+<p>The main objective of this study is to investigate cross-sectional associations of rice intake (n= 6814), and urinary arsenic in a random subset (n=310), with markers of subclinical atherosclerosis in a multi-ethnic population recruited in 2000-2002 from 6 urban settings (New York, NY; Baltimore, MD; Chicago, IL; LA, CA; Twin Cities, MN; Winston Salem, NC).</p>
+</div>
+<div id="design" class="section level3">
+<h3>Design</h3>
+<p>Three domains of cardiovascular disease were included in the primary analysis: inflammation (high-sensitivity C-reactive protein [hsCRP], interleukin-6, and fibrinogen), vascular function (carotid distensibility by ultrasound, aortic distensibility by cardiac MRI, and brachial flow-mediated dilation), and subclinical atherosclerosis (carotid intima-media thickness, coronary artery calcification, and ankle-brachial index). Secondary analyses include arsenic-specific inflammatory markers (e-selectin, ICAM-1, and MMP-9), adjustment for nutritional status and PM2.5, and interactions by race, gender, age, smoking status, and site. Rice consumption was determined at baseline with a food frequency questionnaire. We included 5050 participants with most of the CVD outcomes of interest and no missing data. Subsets received a cardiac MRI (n=2759), an assessment of endothelial function (2702), and urinary arsenic measurements (246).</p>
+</div>
+<div id="results" class="section level3">
+<h3>Results</h3>
+<p>13% of participants reported consuming 1 servings of rice per day. Compared to individuals consuming &lt;1 serving of rice per week in the primary analysis, there was no consistent association in high rice intake and subclinical markers of CVD after adjusting for demographic variables, healthy behavior, and other CVD risk factors. Some examples include hsCRP (geometric mean ratio (GMR) 0.96 [95%CI 0.85, 1.10]), CIMT (0.97 [0.92, 1.02]), and ABI (0.84 [0.52, 1.36]). Urinary arsenic, analyzed continuously due to the small sample size, similarly resulted in null associations (e.g. interleukin-6 (0.99 [0.88, 1.11]). Results for secondary analyses are ongoing.</p>
+</div>
+<div id="conclusion" class="section level3">
+<h3>Conclusion</h3>
+<p>Rice intake is not associated with subclinical vascular disease markers in a multi-ethnic urban US population. The subsample of urinary arsenic is too small to draw a firm conclusion. Whether As from rice represents a risk factor for cardiovascular disease (CVD), remains unknown. Further research, specifically with urinary arsenic as a biomarker of exposure, is needed to assess the potential CVD effects of low-level arsenic exposure in US populations.</p>
+</div>
+<div id="translation" class="section level3">
+<h3>Translation</h3>
+<p>These findings can contribute to risk assessment of arsenic at low-moderate levels of exposure.</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

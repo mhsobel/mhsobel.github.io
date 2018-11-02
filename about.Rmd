@@ -1,9 +1,52 @@
 ---
 title: "About"
+output: 
+  html_document:
+      toc: true
+      toc_float: true
 ---
 
-### About this site
+I am a passionate public health advocate with a background both hard sciences and the arts, working with great concern for both the human population and the environment. I am looking to use both my analytical skills and creative thinking to build effective policy and interventions that minimize and mitigate unvoluntary toxic exposures so people may live productive and fruitful lives. I have experience from the laboratory to the community and hope to continue to find ways to bridge these worlds moving forward after my degree. 
 
-Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
+<br>
 
-If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
+## PUBLIC HEALTH EXPERIENCE
+
+### Graduate Researcher   
+**Superfund Research Program, Mailman School of Public Health, New York, NY**  
+*June 2018 – Present*  
+I am continuing my first epidemiological research project that started as my practicum experience after my first year in graduate school. It is an analysis of low levels of arsenic exposure and subclinical outcomes of cardiovascular disease in the MESA cohort. The abstract can be found [here](abstract.html). 
+
+### Community Outreach and Translation  
+**Columbia Center for Children’s Environmental Health & WE ACT, New York, NY**  
+*February 2018 – Present*  
+I have been working to create an [infographic](infographic.html) for community members in Northern Manhattan and the Bronx on the topic of heating oil, air pollution, and health in response to NYC policy change. It is still in progress, but will soon be translated into Spanish for the targeted community. I synthesized scientific and policy information from grants, papers, and online government sources and interpreted as appropriate for the document. The map included was adapted in QGIS with relevant statistics and manipulated for clearer interpretation. 
+
+### GIS for Public Health 
+**Poster presentation for class at Mailman School of Public Health**   
+*Spring 2018*  
+[Final project](gis.html) for class collaborating with Dr. Ana Navas-Acien in the EHS department looking at the spatial correlation of arsenic and uranium present in well water from Native Lands in North and South Dakota.   
+
+<br>
+
+## SKILLS
+#### *R, STATA, QGIS, GeoDa, Adobe Photoshop and Illustrator, Photography*
+
+<br>
+
+## EDUCATION 
+
+### M.P.H. Environmental Health Sciences, Molecular Epidemiology   
+**Columbia University, Mailman School of Public Health, New York, NY**  
+*Expected 2019*  
+*Relevant Coursework:*  
+Determinants of Health, Data Science, Toxicology, Molecular Epidemiology, Biomarkers, Risk Assessment, Environmental Justice & Health Policy Analysis, Public Health GIS, Occupational & Environmental Hygiene
+
+
+### B.A. Chemistry & Studio Art, cum laude   
+**Franklin & Marshall College, Lancaster, PA**  
+*May 2015*  
+*Relevant Coursework:*  
+Inorganic Chemistry, Advanced Biochemistry, Physiology & Development
+
+
