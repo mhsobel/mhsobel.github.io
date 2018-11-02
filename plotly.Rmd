@@ -43,6 +43,7 @@ common_aisles_1 =
 hour_orders_top8 = 
   inner_join(instacart_dat, common_aisles_1, by = "aisle") %>% 
   plot_ly(y = ~add_to_cart_order, x = ~order_hour_of_day, color = ~aisle, type = "scatter",  mode = "markers", text = ~product_name)
+hour_orders_top8
 ```
 
 ### Mean orders from each aisle
@@ -52,10 +53,10 @@ hour_orders_top8 =
 common_aisles_2 = 
   instacart_dat %>% 
   count(aisle, sort = TRUE) %>% 
-  top_n(10) %>% 
+  top_n(20) %>% 
   select(aisle)
 
-mean_orders_top10 = 
+mean_orders_top20 = 
   inner_join(instacart_dat, common_aisles_2, by = "aisle") %>% 
   mutate(aisle = fct_reorder(aisle, order_id)) %>% 
   plot_ly(y = ~order_id, color = ~aisle, type = "box",
@@ -66,6 +67,7 @@ mean_orders_tot =
   mutate(aisle = fct_reorder(aisle, order_id)) %>% 
   plot_ly(y = ~order_id, color = ~aisle, type = "box",
           colors = "Set2")
+mean_orders_top20
 ```
 
 ### Which day has the most orders? 
@@ -77,5 +79,6 @@ day_of_week =
   count(order_dow) %>% 
   mutate(order_dow = fct_reorder(order_dow, n)) %>% 
   plot_ly(x = ~order_dow, y = ~n, color = ~order_dow, type = "bar")
+day_of_week
 ```
 
