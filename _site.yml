@@ -5,6 +5,10 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - text: "Example Code"
+      href: plotly.html
+    - text: "Example Plots"
+      href: dashboard_template.html
     - text: "Art"
       href: art.html
     - text: "LinkedIn"
