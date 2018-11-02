@@ -42,19 +42,7 @@ common_aisles_2 =
   select(aisle)
 ```
 
-Row
------------------------------------------------------------------------
-
-### Mean orders from each aisle
-
-```{r, echo=FALSE}
-instacart_dat %>% 
-  mutate(aisle = fct_reorder(aisle, order_id)) %>% 
-  plot_ly(y = ~order_id, color = ~aisle, type = "box",
-          colors = "Set2")
-```
-
-Row
+Row {data-width=650}
 -----------------------------------------------------------------------
 
 ### "Add to cart order" over the course of 24 hours for top 8 aisles
@@ -62,10 +50,21 @@ Row
 ```{r, echo=FALSE}
 inner_join(instacart_dat, common_aisles_1, by = "aisle") %>% 
   plot_ly(y = ~add_to_cart_order, x = ~order_hour_of_day, color = ~aisle, type = "scatter",  mode = "markers", text = ~product_name)
+
 ```
 
-Row
+Row {data-width=350}
 -----------------------------------------------------------------------
+
+### Mean orders from each aisle
+
+```{r, echo=FALSE}
+inner_join(instacart_dat, common_aisles_2, by = "aisle") %>% 
+  mutate(aisle = fct_reorder(aisle, order_id)) %>% 
+  plot_ly(y = ~order_id, color = ~aisle, type = "box",
+          colors = "Set2")
+```
+
 ### Which day has the most orders?
 
 ```{r, echo=FALSE}
