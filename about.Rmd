@@ -32,6 +32,9 @@ I have been working to create an [infographic](infographic.html) for community m
 ## SKILLS
 #### *R, STATA, QGIS, GeoDa, Adobe Photoshop and Illustrator, Photography*
 
+Examples of [code](plotly.html) and resultant [plots](dashboard_template.html)
+
+
 <br>
 
 ## EDUCATION 
