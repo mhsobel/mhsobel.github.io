@@ -1,0 +1,12 @@
+---
+title: "dashboard"
+author: "Marisa Sobel"
+date: "11/2/2018"
+output: html_document
+---
+
+```{r}
+library(flexdashboard)
+rmarkdown::render("dashboard_template.Rmd", output_format = "flex_dashboard")
+```
+

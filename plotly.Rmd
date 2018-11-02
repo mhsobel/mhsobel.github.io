@@ -67,7 +67,7 @@ mean_orders_tot =
   mutate(aisle = fct_reorder(aisle, order_id)) %>% 
   plot_ly(y = ~order_id, color = ~aisle, type = "box",
           colors = "Set2")
-mean_orders_top20
+mean_orders_tot
 ```
 
 ### Which day has the most orders? 
