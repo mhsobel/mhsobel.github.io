@@ -6,6 +6,6 @@ Created for [Columbia Center for Children's Environmental Health](https://ccceh.
 
 <center>
 
-<img src="images/heating_oil_infographic.png" style="width:75%">
+<img src="images/heating_oil_infographic.jpg" style="width:75%">
 
 </center>
